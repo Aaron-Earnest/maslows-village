@@ -1,3 +1,32 @@
+
 ul {
+    display: flex;
+    justify-content:space-around;
     list-style: none;
+    padding: 1em;
+    background-color: #983081;
+    border-radius: 1em;
+}
+li {
+    padding-left: 1em;
+    color: white;
+}
+.drowdown {
+    position: relative;
+
+}
+.dropdown-menu {
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    ul {
+        visibility: hidden;
+    }
+    li{
+        visibility: hidden;
+    }
 }

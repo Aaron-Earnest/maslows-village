@@ -1,0 +1,27 @@
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F8A47;
+}
+.site-footer h2 {
+    margin-top: 0;
+    margin-bottom: .25em;
+    margin-left: .25em;
+    color: white;
+}
+.facebook-icon svg {
+    margin-top: .25em;
+    color:white;
+}
+.facebook-icon svg:hover {
+    color: #983081;
+}
+.email-icon svg {
+    margin-top: .25em;
+    padding-left: .5em;
+    padding-right: .25em;
+    color: white;
+}
+.email-icon svg:hover {
+    color: #983081;
+}
