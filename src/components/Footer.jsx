@@ -1,24 +1,25 @@
-import '../css/footer.css'
+import styles from '../css/footer.module.css'
+import united_way from '../images/united_way.webp'
 import {FaFacebook} from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 function Footer(){
     return(
         <>
-        <footer className="site-footer">
-        <h2>Footer</h2>
-        <div className="social-links">
+        <footer className={styles["site-footer"]}>
+        <img src={united_way}/>
+        <div className={styles["social-links"]}>
             <a href="https://www.facebook.com/tinyhomesMtPleasant/"
             target="_blank"
             rel="noopener noreferrer"
-            className="facebook-icon"
+            className={styles["facebook-icon"]}
             >
                 <FaFacebook size={30} />
             </a>
             <a href="tinyhomesmtpleasant@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="email-icon"
+            className={styles["email-icon"]}
             >
                 <MdEmail size={30} />
             </a>

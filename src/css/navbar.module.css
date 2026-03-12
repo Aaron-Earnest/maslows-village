@@ -11,10 +11,6 @@ li {
     padding-left: 1em;
     color: white;
 }
-.drowdown {
-    position: relative;
-
-}
 .dropdown-menu {
     position: absolute;
     display: none;
@@ -24,9 +20,9 @@ li {
 }
 @media screen and (max-width: 600px) {
     ul {
-        visibility: hidden;
+        display: none;
     }
     li{
-        visibility: hidden;
+        display: none;
     }
 }

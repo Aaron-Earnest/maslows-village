@@ -1,10 +1,10 @@
-import tiny_homes_logo_1 from '../images/tiny_homes_logo_1.jpg';
-import '../css/header.css'
+import tiny_homes_logo_1 from '../images/tiny_homes_logo_1_no_background.png';
+import styles from '../css/header.module.css'
 
 function Header(){
     return(
         <>
-            <img src={tiny_homes_logo_1}/>;
+            <img className={styles.img} src={tiny_homes_logo_1}/>;
         </>
     )
 }

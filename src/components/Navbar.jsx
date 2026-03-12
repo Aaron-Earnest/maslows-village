@@ -1,4 +1,4 @@
-import '../css/navbar.css'
+import styles from '../css/navbar.module.css'
 import { Link } from 'react-router-dom'
 
     const navLinks=[
@@ -15,12 +15,12 @@ import { Link } from 'react-router-dom'
 function Navbar(){
     return(
         <>
-            <ul>
+            <ul className={styles.ul}>
                 {navLinks.map((link) => (
-                    <li key={link.name} className={link.subLinks ? "dropdown" : ""}>
+                    <li key={link.name} className={link.subLinks ? styles.dropdown : ""}>
                         <Link to={link.path}>{link.name}</Link>
                         {link.subLinks && (
-                            <ul className="dropdown-menu">
+                            <ul className={styles["dropdown-menu"]}>
                                 {link.subLinks.map((sub) => (
                                     <li key={sub.name}>
                                         <Link to={sub.path}>{sub.name}</Link>

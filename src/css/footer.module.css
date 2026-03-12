@@ -25,3 +25,6 @@
 .email-icon svg:hover {
     color: #983081;
 }
+img {
+    max-width: 15em;
+}
