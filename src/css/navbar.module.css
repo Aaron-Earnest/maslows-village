@@ -1,11 +1,22 @@
 
+.hamburgerWrapper {
+    display: none;
+    padding: 10px;
+    z-index: 100;
+    border: 2px solid red;
+}
+.stickyNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 ul {
     display: flex;
     justify-content:space-around;
     list-style: none;
     padding: 1em;
     background-color: #983081;
-    border-radius: 1em;
+    /*border-radius: 1em;*/
 }
 li {
     padding-left: 1em;
@@ -22,7 +33,10 @@ li {
     ul {
         display: none;
     }
-    li{
-        display: none;
+    .hamburgerWrapper {
+        display: block;
+    }
+    .navActive {
+        display: flex;
     }
 }

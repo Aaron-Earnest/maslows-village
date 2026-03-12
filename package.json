@@ -21,6 +21,7 @@
     "vite": "^7.3.1"
   },
   "dependencies": {
+    "hamburger-react": "^2.5.2",
     "icons": "^1.0.0",
     "react": "^19.0.0-rc.1",
     "react-dom": "19.0.0-rc.1",
