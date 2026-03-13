@@ -15,7 +15,6 @@ function App() {
     <BrowserRouter>
     <ScrollToTop /> {/** Reset scroll postion on every link click */}
       <Header/>
-      <Navbar/>
       <main>
         <Routes>
           <Route path="/" element={<Home/>} />

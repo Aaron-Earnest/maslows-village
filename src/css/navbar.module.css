@@ -3,7 +3,8 @@
     display: none;
     padding: 10px;
     z-index: 100;
-    max-width: 3.2em;
+    max-width: 3em;
+    border-radius: .5em;
     background-color: #983081;
 }
 .stickyNavbar {
@@ -19,8 +20,12 @@ ul {
     background-color: #983081;
     /*border-radius: 1em;*/
 }
+ul li a {
+    text-decoration: none;
+}
 li {
     padding-left: 1em;
+    text-decoration: none;
     color: white;
 }
 .dropdown-menu {
@@ -28,16 +33,47 @@ li {
     display: none;
 }
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    border-radius: .5em;
 }
 @media screen and (max-width: 600px) {
     ul {
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: xx-large;
+        margin: 0;
+    }
+    .stickyNavbar {
+        display: flex;
+        flex-direction: row-reverse;
     }
     .hamburgerWrapper {
         display: block;
+        margin: 1em 1em 0 0;
+        max-height: 45px;
+        top: 1em;
+        z-index: 1001;
+        border: 2px solid black;
     }
     .navActive {
+        position: fixed;
         display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    .opened {
+        border-radius: .5em;
+    }
+    .dropdown-menu {
+        max-width: fit-content;
+        padding: 1em 1em 1em 0;
+        right: 84px;
     }
 }

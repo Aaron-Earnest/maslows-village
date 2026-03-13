@@ -1,5 +1,14 @@
+.header {
+    display: block;
+    }
 img {
     display: flex;
     justify-content: flex-start;
     height: auto;
+}
+@media screen and (max-width: 600px) {
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 }

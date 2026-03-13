@@ -5,7 +5,7 @@ import { useState } from "react";
 
     const navLinks=[
         {name: "Home", path: "/"},
-        {name: "About", path: "/about",
+        {name: "About", path: "#",
             subLinks: [
                 {name: "Management", path: "/about/management"},
                 {name: "Community Impact", path: "/about/community"}
@@ -21,7 +21,7 @@ function Navbar(){
     return(
         <>
             <div className={styles.stickyNavbar}>
-                <div className={styles.hamburgerWrapper}>
+                <div className={`${styles.hamburgerWrapper} ${isOpen ? styles.opened : ''}`}>
                     <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
                 </div>
                 <ul className={`${styles.ul} ${isOpen ? styles.navActive : ''}`}>
